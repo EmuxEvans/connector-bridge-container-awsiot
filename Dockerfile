@@ -5,7 +5,8 @@ EXPOSE 8234/tcp
 EXPOSE 28519/tcp
 EXPOSE 28520/tcp
 RUN apt-get update
-RUN apt-get -y install openjdk-7-jre openssh-server supervisor dnsutils unzip zip
+RUN apt-get -y install openjdk-7-jre openssh-server supervisor dnsutils unzip zip python-pip
+RUN pip install install awscli
 RUN useradd arm -m -s /bin/bash 
 RUN mkdir -p /home/arm
 RUN chown arm.arm /home/arm
@@ -14,6 +15,7 @@ COPY configurator-1.0.zip /home/arm/
 RUN chmod 755 /home/arm/connector-bridge.zip
 RUN chmod 755 /home/arm/configurator-1.0.zip
 COPY ssh-keys.tar /home/arm/
+COPY aws-cli.tar /home/arm/
 RUN chmod 755 /home/arm/ssh-keys.tar
 COPY configure_instance.sh /home/arm/
 COPY start_instance.sh /home/arm/

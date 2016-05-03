@@ -39,6 +39,15 @@ setup_ssh()
     echo "MaxAuthTries 10" >> /etc/ssh/sshd_config
 }
 
+setup_aws_cli() {
+    cd /home/arm
+    tar xpf aws-cli.tar
+    /bin/rm -f aws-cli.tar
+    cd /home/arm/mds/connector-bridge
+    ln -s /usr/local/bin/aws .
+    cd /home/arm
+}
+
 setup_passwords()
 {
     echo "root:arm1234" | chpasswd
@@ -71,6 +80,7 @@ main()
     setup_bridge
     setup_configurator
     setup_ssh
+    setup_aws_cli
     setup_passwords
     setup_sudoers
     setup_java

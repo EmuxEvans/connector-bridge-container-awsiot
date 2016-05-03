@@ -22,6 +22,8 @@ Once the container instance is live, you must configure the bridge and bind it b
 
 <<< TBD>>>
 
+2). Create your IAM Access Key ID and Secret Access Key to enable the AWS CLI in your container. Record those values
+
 3). Next go to https://connector.mbed.com and create your mbed Connector Account
 
 4). Once your Connector account is created, you need to "Access Keys" to create an API Key/Token
