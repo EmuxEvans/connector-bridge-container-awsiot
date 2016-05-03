@@ -43,6 +43,9 @@ setup_aws_cli() {
     cd /home/arm
     tar xpf aws-cli.tar
     /bin/rm -f aws-cli.tar
+    chown -R arm.arm .aws
+    chmod 755 .aws
+    chmod 600 .aws/*
     cd /home/arm/mds/connector-bridge
     ln -s /usr/local/bin/aws .
     cd /home/arm
