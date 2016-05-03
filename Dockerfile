@@ -6,7 +6,7 @@ EXPOSE 28519/tcp
 EXPOSE 28520/tcp
 RUN apt-get update
 RUN apt-get -y install openjdk-7-jre openssh-server supervisor dnsutils unzip zip python-pip
-RUN pip install install awscli
+RUN pip install awscli
 RUN useradd arm -m -s /bin/bash 
 RUN mkdir -p /home/arm
 RUN chown arm.arm /home/arm
