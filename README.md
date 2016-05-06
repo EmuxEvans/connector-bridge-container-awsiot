@@ -5,6 +5,8 @@ Date: May 3, 2016
 LOG:
     5/03/2016: Initial checkin
 
+    5/06/2016: Updated bridge with latest fixes/updates. AWS IoT Connection enabled. 
+
 Container Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 
