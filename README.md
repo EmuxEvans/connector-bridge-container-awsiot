@@ -16,9 +16,16 @@ Container Bridge Instance Installation:
 
 2). cd into the cloned repo and run: ./run-reload-bridge.sh
 
+
+If Starting on a non-EC2 Docker instance: 
+
 3). Note the public IP address of your linux runtime - update "start-bridge.sh" and replace "192.168.1.230" with yours
 
 4). invoke: ./start-bridge.sh
+
+If Starting on an EC2 Docker instance:
+
+3). invoke: ./start-bridge-aws-ec2.sh
 
 Once the container instance is live, you must configure the bridge and bind it between your mbed Connector account and your IoT Account in AWS
 
