@@ -1,11 +1,12 @@
 mbed Device Connector integration bridge image importer for AWS IoT Device Gateway 
 
-Date: May 3, 2016
+Original Date: May 3, 2016
 
-LOG:
     5/03/2016: Initial checkin
 
     5/06/2016: Updated bridge with latest fixes/updates. AWS IoT Connection enabled. 
+
+    5/13/2016: Updated with latest changes from bridge source... bug fixes. Support for put async replies.
 
 Container Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
