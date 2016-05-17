@@ -8,6 +8,8 @@ Original Date: May 3, 2016
 
     5/13/2016: Updated with latest changes from bridge source... bug fixes. Support for put async replies.
 
+    5/17/2016: Updated with latest bridge. Support for device attribute flow into cloud device description. JSON type parsing fixes.
+
 Container Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
 
