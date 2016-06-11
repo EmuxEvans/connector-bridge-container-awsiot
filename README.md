@@ -13,6 +13,8 @@ Original Date: May 3, 2016
     5/26/2016: Updated with latest bridge. JSON type parsing fixes.
 
     5/27/2016: Updated with latest bridge. Enabled REST versioning support
+   
+    6/11/2016: Updated with latest bridge
 
 Container Bridge source (Apache 2.0 licensed - Enjoy!): https://github.com/ARMmbed/connector-bridge.git
 
